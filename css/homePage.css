@@ -1,0 +1,48 @@
+div.slideshow{
+	
+	width:100%;
+	border:none;
+	margin:0px;
+}
+
+div.slideFade{
+	position:relative;
+	width:100%;
+	margin:0px;
+	border:none;
+}
+
+
+p.slideNumber{
+	position:absolute;
+	top:35px;
+	right:35px;
+	background-color:rgba(69,69,69,0.6);
+	margin:0px;
+	padding:5px;
+	border-radius:8px;
+	color:white;
+	font-family:arial;
+	font-size:20px;
+}
+
+div.slideNoteContainer{
+	width:100%;
+	position:absolute;
+	bottom:70px;
+}
+
+
+p.slideNote{
+	display:block;
+	margin:auto;
+	width:360px;
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color:#a6a6a6;
+	color:#595959;
+	font-family:arial;
+	font-size:38px;
+	text-align:center;
+	border-radius:12px;
+}
