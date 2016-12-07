@@ -11,11 +11,11 @@ div.slide{
 	margin:0px;
 	border:none;
 	animation-name:fade;
-	animation-duration:4s;
+	animation-duration:2s;
 	-webkit-animation-name:fade;
-	-webkit-animation-duration:4s;
+	-webkit-animation-duration:2s;
 	-moz-animation-name:fade;
-	-moz-animation-duration:2.5s;
+	-moz-animation-duration:2s;
 }
 
 
@@ -85,16 +85,16 @@ button.slideButton.active, button.slideButton:hover{
 }
 
 @keyframes fade{
-	from{opacity:0.2;}
+	from{opacity:0.45;}
 	to{opacity:1;}
 }
 
 @-webkit-keyframes fade{
-	from{opacity:0.2;}
+	from{opacity:0.45;}
 	to{opacity:1;}
 }
 
 @-moz-keyframes fade{
-	from{opacity:0.2;}
+	from{opacity:0.45;}
 	to{opacity:1;}
 }
