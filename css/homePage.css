@@ -5,11 +5,17 @@ div.slideshow{
 	margin:0px;
 }
 
-div.slideFade{
+div.slide{
 	position:relative;
 	width:100%;
 	margin:0px;
 	border:none;
+	animation-name:fade;
+	animation-duration:4s;
+	-webkit-animation-name:fade;
+	-webkit-animation-duration:4s;
+	-moz-animation-name:fade;
+	-moz-animation-duration:2.5s;
 }
 
 
@@ -26,6 +32,8 @@ p.slideNumber{
 	font-size:20px;
 }
 
+
+
 div.slideNoteContainer{
 	width:100%;
 	position:absolute;
@@ -33,16 +41,60 @@ div.slideNoteContainer{
 }
 
 
+
 p.slideNote{
 	display:block;
 	margin:auto;
-	width:360px;
-	padding-top:10px;
-	padding-bottom:10px;
+	width:315px;
+	padding-top:8px;
+	padding-bottom:8px;
 	background-color:#a6a6a6;
 	color:#595959;
 	font-family:arial;
-	font-size:38px;
+	font-size:34px;
 	text-align:center;
-	border-radius:12px;
+	border-radius:8px;
+}
+
+div.slideButtonBar{
+	position:absolute;
+	bottom:28px;
+	left:50%;
+	width:110px;
+	height:14px;
+	margin-left:-55px;
+	padding:0px;
+}
+
+button.slideButton{
+	display:inline-block;
+	width:14px;
+	height:14px;
+	margin:0px 10px 0px;
+	padding:0px;
+	border:none;
+	border-radius:50%;
+	background-color:#a6a6a6;
+	transition: background-color 0.7s ease;
+	
+}
+
+button.slideButton.active, button.slideButton:hover{
+	border-color:#595959;
+	background-color:#595959;
+}
+
+@keyframes fade{
+	from{opacity:0.2;}
+	to{opacity:1;}
+}
+
+@-webkit-keyframes fade{
+	from{opacity:0.2;}
+	to{opacity:1;}
+}
+
+@-moz-keyframes fade{
+	from{opacity:0.2;}
+	to{opacity:1;}
 }
